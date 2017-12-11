@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AcceptanceTestComponent } from './acceptance-test.component';
-import { browser } from 'protractor';
+
 fdescribe('AcceptanceTestComponent', () => {
   let component: AcceptanceTestComponent;
   let fixture: ComponentFixture<AcceptanceTestComponent>;
@@ -27,7 +27,6 @@ fdescribe('AcceptanceTestComponent', () => {
   });
 
   it('should have acceptance-test class', () => {
-    //browser.pause()
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('p.acceptance-test').textContent).toContain('acceptance-test works!');
 
